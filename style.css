@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.post{
+    background-color: white;
+    width: 400px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 5px solid grey;
+    display: flex;
+    flex-direction: column; 
+}
+.header{
+    display:flex;
+
+}
+.nombre{
+    float:left;
+    width:100%;
+}
+.nombre,.icono1{
+    border:2px solid red;
+    padding:10px;
+}
+.imagen{
+    margin-top: 10px;
+    object-fit: contain;
+    border: 0px solid red;
+    width: 100%;
+
+}
