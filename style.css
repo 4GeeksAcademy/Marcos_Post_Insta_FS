@@ -63,3 +63,9 @@ body{
 .guardar-activo{
     color:grey;
 }
+.modal{
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding:20px;
+}
