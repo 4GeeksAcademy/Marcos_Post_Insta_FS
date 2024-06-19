@@ -10,26 +10,56 @@ body{
     width: 400px;
     margin-top: 40px;
     border-radius: 10px;
-    border: 5px solid grey;
+    border: 2px solid grey;
     display: flex;
     flex-direction: column; 
+    max-height: fit-content;
+    font-family: "Roboto";
 }
 .header{
-    display:flex;
-
+    display:flex; 
+    padding: 10px;
+    align-items: center;
 }
 .nombre{
     float:left;
     width:100%;
+    font-size:18px;
+    justify-content: center;
+    
 }
 .nombre,.icono1{
-    border:2px solid red;
     padding:10px;
 }
 .imagen{
     margin-top: 10px;
     object-fit: contain;
-    border: 0px solid red;
     width: 100%;
 
+}
+.iconos{
+    display:flex;
+}
+.megusta,.comentario,.envio,.guardar{
+    padding:4px;
+    font-size:  20px;
+
+}
+.envio{
+    width:100%;
+}
+.texto, .parrafo{
+    text-align: justify;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+   
+}
+.megusta:hover,.comentario:hover,.envio:hover,.guardar:hover{
+    font-size:25px;
+}
+.megusta-activo{
+    color:red;
+}
+.guardar-activo{
+    color:grey;
 }
