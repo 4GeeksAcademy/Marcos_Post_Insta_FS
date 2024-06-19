@@ -56,6 +56,7 @@ body{
 }
 .megusta:hover,.comentario:hover,.envio:hover,.guardar:hover{
     font-size:25px;
+    cursor: pointer;
 }
 .megusta-activo{
     color:red;
@@ -65,7 +66,36 @@ body{
 }
 .modal{
     background-color: white;
-    border: 2px solid black;
-    text-align: center;
-    padding:20px;
+    border: 2px solid grey;
+    padding:10px;
+    z-index: 1;
+    border-radius: 8px;
+    display:none;
+}
+.input{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.amigo{
+    float:left;
+    width: 100%;
+}
+.pedir{
+    align-items: center;
+    justify-content: center;
+}
+.cierre {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cierre:hover,
+.cierre:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

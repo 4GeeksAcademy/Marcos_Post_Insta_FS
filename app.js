@@ -15,6 +15,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 button.classList.toggle("guardar-activo");
             });
         });
+    
+    
+    const botonComentario = document.querySelectorAll(".comentario i");
+    const modal = document.getElementById("Modal");
+    const span = document.getElementsByClassName("cierre")[0];
+
+    botonComentario.forEach(button => {
+        button.addEventListener("click", () => {
+            modal.style.display = "block";
+        });
+    });
+
+    
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 });
 
 
